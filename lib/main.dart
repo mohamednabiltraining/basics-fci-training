@@ -1,3 +1,4 @@
+import 'package:basics/LoginScreen.dart';
 import 'package:basics/RegisterScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -10,9 +11,14 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
      return MaterialApp(
        routes: {
+         LoginScreen.routeName :(buildContext)=>LoginScreen(),
          RegisterScreen.routeName: (buildContext)=>RegisterScreen()
        },
-       initialRoute: RegisterScreen.routeName,
+       initialRoute: LoginScreen.routeName,
      );
   }
 }
+// feature / featureName
+// update /  featureName
+// bugfix /  bugName
+// hotfix /  fixName (master)
