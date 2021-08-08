@@ -1,3 +1,4 @@
+import 'package:basics/LoginScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -7,6 +8,15 @@ void main(){
 class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-     return MaterialApp();
+     return MaterialApp(
+       routes: {
+         LoginScreen.routeName :(buildContext)=>LoginScreen(),
+          },
+       initialRoute: LoginScreen.routeName,
+     );
   }
 }
+// feature / featureName
+// update /  featureName
+// bugfix /  bugName
+// hotfix /  fixName (master)
